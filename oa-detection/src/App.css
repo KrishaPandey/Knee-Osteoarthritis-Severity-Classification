@@ -1,0 +1,213 @@
+/* Apply Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Basic Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://www.orthopaedicswa.com.au/services/knee/knee/knee-osteoarthritis_files/stacks-image-f7f60a6.jpg'); /* Add background image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps background fixed on scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Main App Container */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card Layout with Transparent Background */
+.card {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  backdrop-filter: blur(10px); /* Blurs background behind the card for readability */
+}
+
+/* Title Styling */
+.title {
+  font-size: clamp(20px, 5vw, 28px);
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* File Input Styling */
+.file-input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 2px solid #dcdcdc;
+  width: calc(100% - 24px); /* Accounting for padding and border */
+  max-width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Image Preview */
+.image-preview {
+  width: 100%;
+  height: auto;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.btn, .btn-reset {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  color: white;
+}
+
+.btn {
+  background-color: #ff5722;
+}
+
+.btn:hover {
+  background-color: #e64a19;
+}
+
+.btn-reset {
+  background-color: #00897b;
+}
+
+.btn-reset:hover {
+  background-color: #00695c;
+}
+
+/* Loading Text */
+.loading-text {
+  color: #ff5722;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* Result Section */
+.result {
+  margin-top: 20px;
+  background-color: rgba(227, 242, 253, 0.9); /* Light blue with transparency */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #2c3e50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Probabilities Section */
+.probabilities-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.probability-row {
+  display: flex;
+  justify-content: center; /* Center both label and probability */
+  gap: 5px; /* Add minimal spacing between class and percentage */
+  font-weight: 500;
+}
+
+.class-label, .class-probability {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #ff3333;
+  background-color: rgba(255, 51, 51, 0.1);
+  border: 1px solid #ff3333;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .file-input {
+    font-size: 14px;
+    padding: 8px;
+    width: calc(100% - 20px); /* Adjusted for smaller padding */
+  }
+
+  .btn, .btn-reset {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .result {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .probabilities-container {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-position: top center;
+  }
+
+  .card {
+    padding: 15px;
+    width: 95%;
+  }
+
+  .file-input {
+    font-size: 13px;
+    padding: 6px;
+    width: calc(100% - 16px); /* Adjusted for even smaller padding */
+  }
+
+  .probability-row {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .error-message {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
