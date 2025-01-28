@@ -26,8 +26,10 @@ Machine Learning Model: Convolutional Neural Network (CNN)
 Trained on https://www.kaggle.com/datasets/shashwatwork/knee-osteoarthritis-dataset-with-severity.
 
 # ScreenShots
-![image](https://github.com/user-attachments/assets/1d2f0a8c-873c-4432-bca7-6188ffd54b56)
-![image](https://github.com/user-attachments/assets/05641a32-e5fc-4c20-8ea6-6ad2168b4923)
+![image](https://github.com/user-attachments/assets/cc5177d8-4a4a-4497-98ec-6370692b115b)
+![image](https://github.com/user-attachments/assets/fd38f06b-6eaf-48ba-a16b-f087ce43e5d8)
+
+
 
 
 
